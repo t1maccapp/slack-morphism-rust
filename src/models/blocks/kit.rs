@@ -41,6 +41,10 @@ pub enum SlackBlock {
     ShareShortcut(serde_json::Value),
     #[serde(rename = "event")]
     Event(serde_json::Value),
+    #[serde(rename = "plan")]
+    Plan(serde_json::Value),
+    #[serde(rename = "task_card")]
+    TaskCard(serde_json::Value),
 }
 
 #[skip_serializing_none]
