@@ -45,6 +45,8 @@ pub enum SlackBlock {
     Plan(serde_json::Value),
     #[serde(rename = "task_card")]
     TaskCard(serde_json::Value),
+    #[serde(rename = "table")]
+    Table(serde_json::Value),
 }
 
 #[skip_serializing_none]
